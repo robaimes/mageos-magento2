@@ -51,7 +51,7 @@ class IndexerSetDimensionsModeCommand extends AbstractIndexerCommand
     public function __construct(
         ObjectManagerFactory $objectManagerFactory,
         ScopeConfigInterface $configReader,
-        array $dimensionSwitchers
+        array $dimensionSwitchers = []
     ) {
         $this->configReader = $configReader;
         $this->dimensionProviders = $dimensionSwitchers;
