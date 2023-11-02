@@ -50,7 +50,7 @@ class IndexerShowDimensionsModeCommand extends AbstractIndexerCommand
     public function __construct(
         ObjectManagerFactory $objectManagerFactory,
         ScopeConfigInterface $configReader,
-        array $indexers,
+        array $indexers = [],
         array $optionalIndexers = []
     ) {
         $this->configReader = $configReader;
