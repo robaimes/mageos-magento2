@@ -51,7 +51,7 @@ class BatchSizeCalculator
     public function __construct(
         array $batchRowsCount,
         array $estimators,
-        array $batchSizeAdjusters,
+        array $batchSizeAdjusters = [],
         ?DeploymentConfig $deploymentConfig = null
     ) {
         $this->batchRowsCount = $batchRowsCount;
